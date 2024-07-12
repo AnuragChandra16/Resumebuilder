@@ -5,7 +5,9 @@
     font-weight: lighter;
     font-size: x-large;
   }
-  
+  /* Styles for larger screens */
+
+
   label {
     font-weight: 500;
     font-size: 1.3rem;
@@ -25,7 +27,8 @@
     
     background-color:rgb(201, 247, 247);
   }
-  
+ 
+
   input:hover {
     border: 1px solid #e7a644;
   }
