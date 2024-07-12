@@ -1,0 +1,31 @@
+.container {
+    padding: 50px 30px;
+    text-align: center;
+    width: 100%;
+    /* display: flex;  */
+     align-items: center; 
+    justify-content: space-evenly;
+    gap: 30px;
+    
+    /* min-height: 85vh; */
+    height:100%;
+    margin-top: 20px;
+    font-size: 2rem;
+    font-weight: bold;
+  }
+.container-small{
+    
+    text-align: center;
+    width: 100%;
+    /* display: flex;  */
+     align-items: center; 
+    justify-content: space-evenly;
+    gap: 20px;
+    font-style: italic;
+    /* min-height: 85vh; */
+    height:100%;
+    margin-top: 10px;
+    font-size: 1.5rem;
+    font-weight: bold;
+    color:rgb(22, 99, 215);
+}
