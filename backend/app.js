@@ -14,7 +14,7 @@ mongoose.connect(process.env.MONGODB_URI)
   .catch(err => console.log(err));
 
   const corsOptions = {
-    origin: ["https://resumebuilder-u7xz.vercel.app/", "*"],
+    origin: ["http://localhost:5173"],
     methods: ["GET", "POST", "PUT", "DELETE"], // Specify the methods you want to allow
     credentials: true // Allow cookies to be sent with requests
 };
