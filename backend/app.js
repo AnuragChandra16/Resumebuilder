@@ -13,12 +13,24 @@ mongoose.connect(process.env.MONGODB_URI)
   .then(() => console.log("connected to mongodb"))
   .catch(err => console.log(err));
 
-  const corsOptions = {
-    origin: ["http://localhost:5173","https://resumebuilder-8mxx.vercel.app/"],
-    methods: ["GET", "POST", "PUT", "DELETE"], // Specify the methods you want to allow
-    credentials: true ,// Allow cookies to be sent with requests
-    optionsSuccessStatus: 204
+//   const corsOptions = {
+//     origin: ["http://localhost:5173","https://resumebuilder-8mxx.vercel.app/"],
+//     methods: ["GET", "POST", "PUT", "DELETE"], // Specify the methods you want to allow
+//     credentials: true ,// Allow cookies to be sent with requests
+//     optionsSuccessStatus: 204
+// };
+// app.options('*', cors(corsOptions));
+const corsOptions = {
+  origin: ['https://resumebuilder-8mxx.vercel.app', 'http://localhost:5173'],
+  methods: ['GET', 'POST', 'PUT', 'DELETE', 'OPTIONS'],
+  allowedHeaders: ['Content-Type', 'Authorization'],
+  credentials: true,
+  optionsSuccessStatus: 204
 };
+
+app.use(cors(corsOptions));
+
+// Handle preflight requests
 app.options('*', cors(corsOptions));
   
 // Middlewares
