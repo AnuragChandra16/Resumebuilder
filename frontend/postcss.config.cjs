@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 // module.exports = {
 //     plugins: {
 //       tailwindcss: {},
@@ -11,3 +12,11 @@ export default {
     autoprefixer: {},
   },
 }
+=======
+// export default {
+//   plugins: {
+//     "@tailwindcss/postcss": {},
+//     autoprefixer: {},
+//   },
+// }
+>>>>>>> 14d979e (fix tailwind postcss plugin)
